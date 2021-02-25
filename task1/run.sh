@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 array=$(find $1 -name "*.$2")
 mkdir $3
 for var in $array
