@@ -1,9 +1,9 @@
 #!/bin/bash
-array=$(find $1 -name "*.$2")
-mkdir $3
-for var in $array
+array=$(find $REQUIRED -name "*.$EXTENSION")
+mkdir $DIR
+for var in $ARRAY
 do
-cp --parents $var $3
+cp --parents $var $FileFormat
 done
-tar -czf $4 $3
+tar -czf $ArchiveName $DIR
 echo done
