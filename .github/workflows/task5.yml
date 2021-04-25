@@ -28,7 +28,8 @@ jobs:
         make
         make install
     - name: Test
-      uses: akhtyamovpavel/ActionGtestReport@v0.0.9
+      uses: |
+          akhtyamovpavel/ActionGtestReport@v0.0.9
       with:
         exec-path: "bin/CTestExe"
         report-path: "report.xml"
